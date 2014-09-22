@@ -28,6 +28,7 @@
   }
 
   function hasProperty(object, key) {
+    if (typeof object === 'undefined') { return false; }
     return key in object;
   }
   function hasOwnProperty(object, key) {
